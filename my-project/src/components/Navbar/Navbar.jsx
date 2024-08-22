@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLeaf } from "react-icons/fa6";
 import { MdMenu, MdOutlineShoppingCart } from "react-icons/md";
+import ResponsiveMenu from '../ResponsiveMenu/ResponsiveMenu';
 
 const NavbarMenu = [
     {
@@ -31,7 +32,9 @@ const NavbarMenu = [
 ];
 
 const Navbar = () => {
+    const[open, setOpen] = React.useState(false);
     return (
+        <>
         <nav className="bg-white shadow-lg">
             <div className='container mx-auto flex justify-between items-center p-4'>
                 {/* Logo section */}
@@ -63,6 +66,9 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+        {/* Mobile Menu section */}
+        <ResponsiveMenu />
+        </>
     );
 };
 
