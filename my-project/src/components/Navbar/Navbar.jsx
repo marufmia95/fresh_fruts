@@ -36,7 +36,7 @@ const Navbar = () => {
     return (
         <>
         <nav className="bg-white shadow-lg">
-            <div className='container mx-auto flex justify-between items-center p-4'>
+            <div className='container mx-auto flex justify-between items-center py-4 md:pt-4'>
                 {/* Logo section */}
                 <div className='text-2xl flex items-center gap-2 font-bold uppercase'>
                     <p className='text-primary'>Fruit</p>
@@ -45,13 +45,13 @@ const Navbar = () => {
                 </div>
 
                 {/* Menu section */}
-              <div>
-              <ul className='flex space-x-8'>
-                    {NavbarMenu.map((menuItem) => (
-                        <li key={menuItem.id}>
-                            <a href={menuItem.link} 
+              <div className='hidden md:block'>
+              <ul className='flex items-center gap-6 text-gray-600' >
+                    {NavbarMenu.map((menu) => (
+                        <li key={menu.id}>
+                            <a href={menu.link} 
                           className='inline-block py-1 px-3 hover:text-primary hover:shadow-[0_3px_0_-1px_#ef4444] font-semibold '>
-                                {menuItem.title}
+                                {menu.title}
                             </a>
                         </li>
                     ))}
@@ -61,7 +61,7 @@ const Navbar = () => {
                 </ul>
               </div>
               {/* Mobile Hamburger Menu section */}
-                <div  onClick={() => setOpen(!open)} >
+                <div className='md:hidden' onClick={() => setOpen(!open)} >
                     <MdMenu className='text-4xl'/>
                 </div>
             </div>
