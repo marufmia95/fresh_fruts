@@ -1,11 +1,25 @@
 import React from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 
-const ResponsiveMenu = () => {
+const ResponsiveMenu = ({open}) => {
     return (
-        <div>
-            Responsive
-        </div>
+        <AnimatePresence mode='wait'>
+            {
+                open &&(
+                    <div>
+                        <div>
+                            <ul>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Services</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                )
+            }
+
+        </AnimatePresence>
     );
 };
 
