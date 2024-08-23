@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
+import Hero from './components/Hero/Hero'
 
 function App() {
  
@@ -8,6 +9,7 @@ function App() {
     <>
      <main className='overflow-x-hidden'>
       <Navbar/>
+      <Hero/>
      </main>
     </>
   )
