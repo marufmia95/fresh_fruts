@@ -10,14 +10,17 @@ const Hero = () => {
                         <h1 className='text-5xl lg:text-6xl font-bold leading-relaxed xl:leading-loose font-averia'>
                              Helthy
                         <br />
-                       
                             Fresh <span className='text-secondary'>Fruits!</span>
                         </h1>
-                        <p>Order Now For Fresh Health Life</p>
-                        <p>
+                        <p className='text-2xl tracking-wide'>Order Now For Fresh Health Life</p>
+                        <p className='text-gray-400'>
                             Healthy and yummy food for fresh morning breakfast Eat Daily for
                             good health and mind Order now and get 20% off on your first order
                         </p>
+                        {/*     Button section */}
+                        <div>
+                            <button className='primary-btn'>Order Noew</button>
+                        </div>
                     </div>
                 </div>
                 {/* Hero Images */}
