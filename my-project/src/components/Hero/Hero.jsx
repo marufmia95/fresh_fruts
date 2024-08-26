@@ -1,4 +1,6 @@
 import React from 'react';
+import { IoBagHandleOutline } from "react-icons/io5";
+import HeroPng from "../../assets/fruit-plate.png";
 
 const Hero = () => {
     return (
@@ -19,11 +21,18 @@ const Hero = () => {
                         </p>
                         {/*     Button section */}
                         <div>
-                            <button className='primary-btn'>Order Noew</button>
+                            <button className='primary-btn flex items-center gap-2'>
+                                <span>
+                                <IoBagHandleOutline />
+                                </span>
+                                Order Noew</button>
                         </div>
                     </div>
                 </div>
                 {/* Hero Images */}
+                <div>
+                    <img src={HeroPng} alt="" className='w-[350px] md:w-[550px] drop-shadow' />
+                </div>
             </div>
         </section>
     );
