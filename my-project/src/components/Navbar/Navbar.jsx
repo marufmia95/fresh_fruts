@@ -2,6 +2,8 @@ import React from 'react';
 import { FaLeaf } from "react-icons/fa6";
 import { MdMenu, MdOutlineShoppingCart } from "react-icons/md";
 import ResponsiveMenu from '../ResponsiveMenu/ResponsiveMenu';
+import { motion } from 'framer-motion';
+
 
 const NavbarMenu = [
     {
