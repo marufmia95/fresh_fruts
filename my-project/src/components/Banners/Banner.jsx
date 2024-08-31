@@ -27,10 +27,10 @@ const Banner = () => {
                         viewport={{once: true}}
                         className='text-3xl lg-text-6xl font-bold uppercase'>Brand Info</motion.h1>
                         <motion.p
-                        // variants={FadeUp(0.7)}
-                        // initial='hidden'
-                        // animate='visible'
-                        // viewport={{once: true}}
+                        variants={FadeUp(0.7)}
+                        initial='hidden'
+                        animate='visible'
+                        viewport={{once: true}}
                         >
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, pariatur corporis ullam iure, voluptatibus voluptatem,
                              atque fuga consequatur placeat voluptates incidunt delectus ipsam. Voluptates similique perspiciatis aliquam sint temporibus!
