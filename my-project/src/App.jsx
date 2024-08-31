@@ -9,8 +9,8 @@ function App() {
  
   return (
     <>
-     <main className='overflow-x-hidden bg-indigo-200'>
-      <Navbar/>
+     <main className='overflow-x-hidden bg-indigo-100'>
+      <Navbar  />
       <Hero/>
       <Menus/>
       <Banner/>
