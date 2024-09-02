@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Menus from './components/Menus/Menus'
 import Banner from './components/Banners/Banner'
+import Banner2 from './components/Banners/Banner2'
 
 function App() {
  
@@ -14,6 +15,7 @@ function App() {
       <Hero/>
       <Menus/>
       <Banner/>
+      <Banner2></Banner2>
      </main>
     </>
   )

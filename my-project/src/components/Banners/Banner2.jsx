@@ -1,21 +1,16 @@
 import React from 'react';
-import BannerPng from "../../assets/fruits-splash.png"
+// import BannerPng from "../../assets/fruite-plate2.png"
+import BannerPng from "../../assets/fruit-plate2.png"
 import { motion } from 'framer-motion';
 import { FadeLeft, FadeRight, FadeUp } from '../utility/animation';
 
 // Banner Component  - Fade Up Animation on the initial render.  'FadeUp' is a custom animation defined in 'animation.js' file.  'motion' library is used for creating smooth animations.  'initial' and 'animate' are variants for the animation.  'exit' is the variant for the animation when the component is removed from the DOM.  'transition' is used for the animation duration.  'keyframes' is used for creating custom animations.
-const Banner = () => {
+const Banner2 = () => {
+    
     return (
-        <section className='bg-secondary/10'>
+        <section className=''>
             <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
-                {/* banner Image */}
-                <div className='flex justify-center items-center'>
-                <motion.img
-                    initial={{opacity: 0, scale: 0.5}}
-                    animate={{opacity: 1, scale: 1}}
-                    transition={{ type: "spring", stiffness: 100, delay: 0.2}}
-                     src={BannerPng} alt=""  className='w-[300px] md:max-w-[400px] h-full object-cover'/>
-                </div>
+               
 
                 {/* banner Info */}
                 <div className='flex flex-col justify-center'>
@@ -54,8 +49,18 @@ const Banner = () => {
 
                     </div>
                 </div>
+
+                 {/* banner Image */}
+                 <div className='flex justify-center items-center'>
+                <motion.img
+                    initial={{opacity: 0, scale: 0.5}}
+                    animate={{opacity: 1, scale: 1}}
+                    transition={{ type: "spring", stiffness: 100, delay: 0.2}}
+                     src={BannerPng} alt=""  className='w-[300px] md:max-w-[400px] h-full object-cover'/>
+                </div>
+
             </div>
         </section>
     );
 };
-export default Banner;
+export default Banner2;
