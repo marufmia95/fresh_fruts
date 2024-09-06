@@ -1,15 +1,23 @@
 import React from 'react';
-// import BannerPng from "../../assets/fruite-plate2.png"
-import BannerPng from "../../assets/fruit-plate2.png"
+import BannerPng from "../../assets/banner-bg.jpg"
 import { motion } from 'framer-motion';
-import { FadeLeft, FadeRight, FadeUp } from '../utility/animation';
+import { FadeUp, FadeRight } from '../utility/animation';
+
 
 // Banner Component  - Fade Up Animation on the initial render.  'FadeUp' is a custom animation defined in 'animation.js' file.  'motion' library is used for creating smooth animations.  'initial' and 'animate' are variants for the animation.  'exit' is the variant for the animation when the component is removed from the DOM.  'transition' is used for the animation duration.  'keyframes' is used for creating custom animations.
-const Banner2 = () => {
-    
+const Banner3 = () => {
     return (
         <section className=''>
-            <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-24">
+            <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
+                {/* banner Image */}
+                <div className='flex justify-center items-center'>
+                <motion.img
+                    initial={{opacity: 0, scale: 0.5}}
+                    animate={{opacity: 1, scale: 1}}
+                    transition={{ type: "spring", stiffness: 100, delay: 0.2}}
+                     src={BannerPng} alt=""  className='w-[300px] md:max-w-[400px] h-full object-cover drop-shadow'/>
+                </div>
+
                 {/* banner Info */}
                 <div className='flex flex-col justify-center'>
                     <div className='text-center md:text-left space-y-4 lg:max-w-[400px]'>
@@ -47,17 +55,8 @@ const Banner2 = () => {
 
                     </div>
                 </div>
-
-                 {/* banner Image */}
-                 <div className='flex justify-center items-center'>
-                <motion.img
-                    initial={{opacity: 0, scale: 0.5}}
-                    animate={{opacity: 1, scale: 1}}
-                    transition={{ type: "spring", stiffness: 100, delay: 0.2}}
-                     src={BannerPng} alt=""  className='w-[300px] md:max-w-[400px] h-full object-cover drop-shadow'/>
-                </div>
             </div>
         </section>
     );
 };
-export default Banner2;
+export default Banner3;
