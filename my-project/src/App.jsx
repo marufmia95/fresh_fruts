@@ -6,6 +6,7 @@ import Menus from './components/Menus/Menus'
 import Banner from './components/Banners/Banner'
 import Banner2 from './components/Banners/Banner2'
 import Banner3 from './components/Banners/Banner3'
+import Fotter from './components/Footer/Fotter'
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
       <Banner/>
       <Banner2></Banner2>
       <Banner3/>
+      <Fotter/>
      </main>
     </>
   )
