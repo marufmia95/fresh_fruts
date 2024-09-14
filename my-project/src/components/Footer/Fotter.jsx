@@ -16,11 +16,15 @@ const Fotter = () => {
                     <FaLeaf className='text-green-500' />
                 </div>
 {/* Social icon Section */}
-                <div className='text-3xl flex items-center gap-4 mt-6 text-gray-700'>
-                    <FaFacebook/>
-                    <FaInstagram/>
-                    <FaTwitter/>
-                    <FaLeaf/>
+                <div className='text-3xl flex items-center gap-4 mt-6 '>
+                   <a className='text-[#1877F2]' href=""><FaFacebook/></a>
+                   <a className='text-[#f219f9]' href=""><FaInstagram/></a>
+                   <a className='text-black' href="">𝕏</a>
+                   <a className='text-green-500' href=""><FaLeaf/></a>
+                    
+                    
+                    
+                    
                 </div>
             </motion.div>
         </footer>
