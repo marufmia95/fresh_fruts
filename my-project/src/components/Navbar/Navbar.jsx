@@ -43,14 +43,13 @@ const Navbar = () => {
             animate={{opacity:1}}
             transition={{duration: 0.5, delay: 0.5}}
             className='container mx-auto flex justify-between items-center py-4 md:pt-4'>
-                {/* Logo section */}
+{/*################ Logo section#################### */}
                 <div className='text-2xl flex items-center gap-2 font-bold uppercase'>
                     <p className='text-primary'>Fruit</p>
                     <p className='text-secondary'>Store</p>
                     <FaLeaf className='text-green-500' />
                 </div>
-
-                {/* Menu section */}
+ {/*############### Menu section################## */}
               <div className='hidden md:block'>
               <ul className='flex items-center gap-6 text-gray-600' >
                     {NavbarMenu.map((menu) => (
