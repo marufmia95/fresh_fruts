@@ -20,7 +20,7 @@ const Fotter = () => {
                    <a className='text-[#1877F2]' href=""><FaFacebook/></a>
                    <a className='text-[#f219f9]' href=""><FaInstagram/></a>
                    <a className='text-black' href="">𝕏</a>
-                   {/* <a className='text-green-500' href=""><FaLeaf/></a> */}
+                   <a className='text-green-500' href=""><FaLeaf/></a>
                 </div>
             </motion.div>
         </footer>
