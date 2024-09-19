@@ -40,11 +40,12 @@ const Hero = () => {
                         initial='hidden'
                         animate='visible'
                         >
-                            <button className='primary-btn flex items-center gap-2'>
-                                <span>
-                                <IoBagHandleOutline />
-                                </span>
-                                Order Noew</button>
+                           <button className='primary-btn flex items-center gap-2'>
+                             <span>
+                               <IoBagHandleOutline />
+                             </span>
+                             Order Now
+                            </button>
                         </motion.div>
                     </div>
                 </div>
