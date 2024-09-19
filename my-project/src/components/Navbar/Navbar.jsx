@@ -38,7 +38,7 @@ const Navbar = () => {
     return (
         <>
         <nav className="bg-white shadow-lg">
-            {/* <motion.div
+            <motion.div
             initial={{opacity:0}}
             animate={{opacity:1}}
             transition={{duration: 0.5, delay: 0.5}}
@@ -69,7 +69,7 @@ const Navbar = () => {
                 <div className='md:hidden' onClick={() => setOpen(!open)} >
                     <MdMenu className='text-4xl'/>
                 </div>
-            </motion.div> */}
+            </motion.div>
         </nav>
         {/* Mobile Menu section */}
         <ResponsiveMenu open={open} />
