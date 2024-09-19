@@ -13,11 +13,11 @@ const ResponsiveMenu = ({open}) => {
                  transition={{ duration: 0.3}}
                  className='absolute top-10 right-0 w-[40%] h-screen z-20'>
                      <div className='text-xl font-semibold uppercase bg-[#88D66C] text-white py-10 m-8 rounded-tl-[150px] rounded-br-[130px] '>
-                         <ul className='flex flex-col items-center gap-10'>
+                         <ul className='flex flex-col items-center gap-8'>
                             <a href=""><li>Home</li></a> 
                             <a href=""><li>About</li></a>
                             <a href=""><li>Services</li></a> 
-                            <a href=""><li>Contact</li></a> 
+                            <a className='mb-4' href=""><li>Contact</li></a> 
                          </ul>
                      </div>
                  </motion.div>
