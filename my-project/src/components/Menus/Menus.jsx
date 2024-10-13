@@ -31,14 +31,14 @@ const MenusData = [
         img: Fruit3,
         delay: 0.9,
     },
-    // {
-    //     id: 4,
-    //     title: 'Fresh Cherries',
-    //     link: '/',
-    //     price: "$2.99",
-    //     img: Fruit4,
-    //     delay: 1.2,
-    // },
+    {
+        id: 4,
+        title: 'Fresh Cherries',
+        link: '/',
+        price: "$2.99",
+        img: Fruit4,
+        delay: 1.2,
+    },
 ];
 
 const Menus = () => {
